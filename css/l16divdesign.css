@@ -1,0 +1,69 @@
+.firstdiv{
+
+	width: 200px;
+	height: 200px;
+	/*background-color: gray;*/
+	/*background-color: #dbdbdb;*/
+	/*background-color: rgba(123,334,22,0.5);*/
+
+	/*background: gray;*/
+	/*background: #dbdbdb;*/
+	background: rgba(123, 330, 20, 0.4);
+
+	color: white;
+	font-size: 20px;
+}
+
+.seconddiv{
+	color: white;
+	width: 600px;
+	height: 600px;
+	border: 1px solid black;
+	background-image: url("./../img/cover/bg1.jpg");
+	/*background: url("./../img/cover/bg1.jpg");*/
+	/*no working
+	background-color: url("./../img/cover/bg2.jpg");*/
+	/*background-repeat: repeat-x;*/
+
+	background-repeat: repeat-y;
+	background-position: center;
+}
+
+.divthree{
+	width: 300px;
+	height: 300px;
+
+	/*using linear-gradient*/
+	/*background: linear-gradient(red,orange);
+	background: linear-gradient(red,orange,blue,orange);
+	background: linear-gradient(#fcba03,#031cfc);
+	background: linear-gradient(rgba(112, 12, 20, 0.2),rgba(20, 12, 112, 0.9));*/
+	background-image: linear-gradient(red,orange,blue);
+
+	/*can't use linear-gradient*/
+	
+	/*background-color: linear-gradient(red,orange,pink);*/
+
+}
+
+.divfour{
+	width: 200px;
+	height: 300px;
+	border: 2px solid green;
+
+	/*background-image: linear-gradient(red,red),url("../img/cover/bg2.jpg");*/
+	/*background-image: url("../img/cover/bg2.jpg"),linear-gradient(rgba(227,26, 127, 0),rgba(239,252,127,0.5));*/
+	background-image: linear-gradient(rgba(227,26, 127, 0),rgba(239,252,127,0.5)),url("./../img/cover/bg2.jpg");
+	background-repeat: no-repeat;
+	color: #ffff;
+
+/*	
+	linear-gradient with degree
+	background: linear-gradient(
+		-45deg,
+		red,
+		orange,
+		blue
+	);
+*/
+}

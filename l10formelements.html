@@ -1,0 +1,196 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h3>Form Elements</h3>
+
+		<fieldset>
+			<legend>
+				&dollar;&#x00024;&#36;This is sample form&dollar;&#x00024;&#36;
+			</legend>
+
+				<form action="" method="" enctype="multiple/form-data">
+			<label for="firstName">First Name </label>
+			<input type="text" name="firstName" id="firstName" class="" autocomplete="off" placeholder="Enter your first name" minlength="4" maxlength="5" autofocus required />
+
+			<br/><br/>
+
+			<label for="lastName">Last Name </label>
+			<input type="text" name="lastName" id="lastName"
+			class="" autocomplete="off" placeholder="Enter your last name" />
+
+			<br/><br/>
+
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age" class="" placeholder="Please enter your age" min="1" max="99" />
+
+			<br/><br/>
+
+			<label for="email">Email </label>
+			<input type="email" name="email" id="email" class="" autocomplete="off" placeholder="Enter your email" min="@gmail.com" />
+
+			<br/><br/>
+
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" class="" autocomplete="off" placeholder="Enter your password" />
+
+			<br/><br/>
+
+			<label for="gender">Gender</label>
+				<input type="radio" name="gender" id="gender" class="" value="1" checked>
+					<label for="gender">Male</label>
+				<input type="radio" name="gender" id="gender" class="" value="2">
+					<label for="gender">Female</label>
+				<input type="radio" name="gender" id="gender" class="" value="3">
+					<label for="gender">Other</label>
+
+			<br/><br/>
+
+			<label>Friut</label>
+				<input type="radio" name="Friut" id="Friutapp" class="" value="1">
+					<label for="Friutapp">Apple</label>
+				<input type="radio" name="Friut" id="Friutorg" class="" value="2">
+					<label for="Friutorg">Orange</label>
+				<input type="radio" name="Friut" id="Friutban" class="" value="3" checked>
+					<label for="Friutban">Banana</label>
+
+			<br/><br/>
+
+			<label>Chooser your favaourite color</label>
+				<input type="checkbox" name="colorrd" id="colorrd" class="" value="1">
+					<label for="colorrd">Red</label>
+
+				<input type="checkbox" name="colorb" id="colorb" class="" value="2"> 
+					<label for="colorb">Blue</label>
+
+				<input type="checkbox" name="colorg" id="colorg" class="" value="3">
+					<label for="colorg">green</label>
+				<input type="checkbox" name="colorv" id="colorv" class="" value="4" 
+				checked>
+					<label for="colorv">Viloet</label>
+
+				</br></br>
+
+			<label for="country">Citizen</label>
+				<select name="country" id="country">
+					<option selected disabled>Choose Country</option>
+					<option value="1">Myanmar</option>
+					<option value="2">Japan</option>
+					<option value="3">England</option>
+					<option value="4">Thialand</option>
+					<option value="5" disabled>Philipne</option>
+				</select>
+			<br/>
+			<br/>
+
+			<label for="firstName">First Name </label>
+				<input type="text" name="firstName" id="firstName" class="" autocomplete="off" placeholder="Enter your first name" autofocus value="Hein" disabled />
+			<br/><br/>
+
+			<label for="lastName">Last Name </label>
+				<input type="text" name="lastName" id="lastName"
+			class="" autocomplete="off" placeholder="Enter your last name" value="Khant" readonly />
+			<br/><br/>
+
+
+			<label for="role">Role</label>
+			<select name="role" id="role" class="" multiple>
+				<option value="1">Manger</option>
+				<option value="2">Editor</option>
+				<option value="3">Supervisor</option>
+				<option value="4">Sales</option>
+			</select>
+			<br/><br/>
+
+			<label for="dob">DOB</label>
+			<input type="date" name="dob" id="dob" class="">
+			<br/><br/>
+
+			<label for="bookingtime">Booking Time</label>
+			<input type="time" name="bookingtime" id="bookingtime">
+			<br/><br/>
+
+			<label for="apt">Appointment</label>
+			<input type="datetime-local" name="apt" id="apt" class="">
+			<br/><br/>
+
+			<label for="volume">Volume</label>
+			<input type="range" name="volume" id="volume" class="" value="20" min="0" max="200" step="20">
+
+			<br/><br/>
+
+			<label>Bio</label>
+			<textarea name="bio" id="bio" class="" rows="10"
+			placeholder="Write Something..."></textarea>
+
+			<br/><br/>
+
+			<label for="nrc">NRC</label>
+			<input type="file" name="nrc" id="nrc" class="" capture="user" accept="image/*"  multiple />
+
+			<br/><br/>
+
+			<label for="nrc">Video Reecord</label>
+			<input type="file" name="nrc" id="nrc" class="" capture="enviroment" accept="video/*" multiple />
+
+			<br/><br/>.
+
+			<input type="hidden" name="test" id="test" class="" value="3">
+
+			<br/><br/>
+
+			<input type="reset" name="reset" id="reset" class="" value="Cancel" />
+
+			<input type="submit" name="submit" id="submit" class="" value="Register">
+
+			<br/><br/>
+
+			<button type="submit" name="login" id="login">Login</button>
+
+			<button type="reset" name="reset" id="reset">Reset</button>
+
+		</form>
+
+		</fieldset>
+	</body>
+</html>	
+
+<!--
+Standard alone attribute
+	autofocus -> when Browser Loading, cursor  
+	disabled -> show(dim) and not working
+	multiple -> much select 
+	<select></select> & <input type="file" />
+	selected -> start select
+	checked
+	readable -> show(bright) and not working
+
+-->
+
+<!--
+Input type
+------------
+text
+password
+radio
+checkbox
+email
+date
+time 
+ -->
+
+ <!-- 
+Input attribute
+---------------
+name
+id
+class
+value
+placeholder
+autocomplete
+autofocus
+checked
+
+  -->
+

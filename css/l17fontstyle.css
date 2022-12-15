@@ -1,0 +1,136 @@
+/*Universal Selector*/
+*{
+	cursor: help;
+}
+
+/*1.Local Font Integrate
+	i.Local Machine Integrate
+	ii.Project Folder Integrate*/
+/*i.Local Machine Integrate*/
+.p1{
+	font-family: Arial;
+}
+
+.p2{
+	font-family: Century,Arial,"Time New Rorem";
+}
+
+
+/*ii.Project Folder Integrate*/
+
+
+/*at-rultes*/
+/*for = stick font*/
+@font-face{
+	font-family: Stick;
+
+	src: local("Stick-Regular"),url("../libs/fonts/stick/Stick-Regular.ttf") format("woff");
+}
+
+/*for = akaya*/
+@font-face{
+	font-family: Akaya;
+	src: local("AkayaTelivigala-Regular"),url("../libs/fonts/akayatelivigala/AkayaTelivigala-Regular.ttf") format("woff");
+}
+
+
+/*body{
+	font-family: 'Stick', sans-serif;
+}
+*/
+.p1{
+	font-family: Stick;
+}
+
+.p2{
+	font-family: Akaya;
+}
+
+
+
+
+/*2.Global Font Integrate*/
+.p3{
+	/*font-family: 'Stick', sans-serif;*/
+
+	/*
+	font-family: 'Stick'; <--online
+	font-family: sans-serif; <--offline
+	*/
+}
+
+.p4{
+	font-family: 'Akaya Kanadaka', cursive;
+
+	/*font-weight: bold;
+	font-weight: bolder;*/
+					/*100 t0 900*/
+	font-weight: 600;
+
+	font-style: italic;
+
+	text-transform: uppercase;
+	text-transform: lowercase;
+	text-transform: capitalize;
+
+	text-indent: 50px;
+}
+
+
+.clickme{
+	text-decoration: none;
+}
+
+.clickme:visited{
+	color: green;
+}
+
+.clickme:hover{
+	color: red;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.menutext{
+	font-family: Cambria;
+	text-decoration: none;
+	background-color: greenyellow;
+	color: #ffff;
+
+	/*padding: 10px;*/
+
+	/*top&bottom  left&right*/
+	/*padding: 10px 30px;*/
+
+			/*top right bottom left*/
+	/*padding: 10px 20px 30px 40px;*/
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	border-radius: 10px;
+
+	transition: all 1s;
+	transition: background-color 5s;
+	transition:  background-color 2s, color 5s;
+}
+
+.menutext:hover{
+	background-color: orange;
+	color: #0000;
+}
+
+.imgdesign{
+	width: 80px;
+	height: 80px;
+
+	cursor: pointer;
+
+	transition: all 1s;
+}
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+}

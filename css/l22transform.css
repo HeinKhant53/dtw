@@ -1,0 +1,102 @@
+:root{
+	--gn : green;
+	--oc : orange;
+	--rc : red;
+	--yc : yellow;
+	--vc : violet;
+}
+.div1{
+	width: 100px;
+	height: 80px;
+	background-color: var(--gn);
+
+	transform: rotate(45deg);
+}
+
+.div2{
+	width: 100px;
+	height: 80px;
+	background-color: var(--oc);
+
+	transform: rotate(-45deg);
+}
+
+.div3{
+	width: 200px;
+	height: 80px;
+	background-color: var(--rc);
+
+	transform : rotateX(60deg);
+}
+
+.div4{
+	width: 200px;
+	height: 80px;
+	background-color: var(--rc);
+
+	transform : rotateY(60deg);
+}
+
+.div5{
+	width: 200px;
+	height: 80px;
+	background-color: var(--gn);
+
+			/*default 1	*/
+	transform: scale(0.5);
+}
+
+.div6{
+	width: 200px;
+	height: 80px;
+	background-color: var(--yc);
+
+	/*transform: skew(50deg);*/
+	transform: skew(-50deg);
+}
+.div7{
+	width: 200px;
+	height: 80px;
+	background-color: var(--vc);
+
+	/*transform: translate(50%);*/
+	/*transform: translate(-100%);*/
+	/*transform: translate(100px);*/
+	/*transform: translate(0px);	*/
+
+	/*transform: translateY(40px);*/
+	transform: translateY(-100%);
+}
+
+.country{
+	font-size: 15px;
+
+	/*Vender Prifix Properties*/
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance:  none;
+
+	padding: 10px 30px 10px 10px;
+	background-image: url('../img/downarrow.png');
+	background-size: 15px;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position-x: 95%;
+}
+h1{
+	text-align: center;
+	color: red;
+}
+p.text{
+	text-align: center;
+}
+
+@media(max-width: 600px){
+	h1{
+		font-size: 25px;
+		color: blue;
+	}
+	p.text{
+		color: green;
+	}
+}

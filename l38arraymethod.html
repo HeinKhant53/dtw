@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Method</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        //Array Method
+        let arrColors= ["red","black","orange","tomato","violet"];
+
+        console.log(arrColors);
+        console.log(arrColors.length);
+        console.log(arrColors[3]);
+        console.log(arrColors.indexOf("violet"));
+
+        //Character Array in js
+        let myfriend = "Aung Kyaw Kyaw";
+        console.log(Array.isArray(arrColors)); //result= true
+        console.log(Array.isArray(myfriend)); //result= false
+
+        //Array to String
+        console.log("Array to String by toString = " + arrColors.toString());
+        console.log("Array to String by join = " + arrColors.join('-'));
+
+
+        const n = ["red","black","green","silver"];
+        console.log(n);
+        n[4] = "pink";
+        n[5] = "orange";
+
+        //Add new value to array (add on to the end)
+        n.push("gold");
+        n.push("orange","white");
+        console.log(n);
+
+        //Add new value to array (add on to the front)
+        n.unshift("tomato");
+        n.unshift("skyBlue","grey");
+        console.log(n);
+
+        //Remove value & index (take off from front)
+        n.shift();
+        console.log(n);
+
+        //Remove value & index (take off from end)
+        n.pop();
+        console.log(n);
+
+        //Remove only value 
+        delete n[2];
+        console.log(n);
+        // (10) ['grey', 'tomato', empty, 'black', 'green', 'silver', 'pink', 'orange', 'gold', 'orange']
+        console.log(n.length); //10
+        console.log(n[2]); //undefined
+
+        //splice(index,length(space))
+        let q = n.splice(1,5);
+        console.log(q);
+        console.log(q.length);//5
+
+        //Array Combine
+        const arr1 = ["aung aung","zaw zaw","maung maung","kyaw kyaw"];
+        const arr2 = [ "su su","nu nu","yu yu","lu lu"];
+        const arr3 = [100,200,300,400];
+        
+        console.log(arr1+arr2);
+        // aung aung,zaw zaw,maung maung,kyaw kyawsu su,nu nu,yu yu,lu lu
+        //oki but changed to string
+
+        console.log(arr1.concat(arr2));
+        //  ['aung aung', 'zaw zaw', 'maung maung', 'kyaw kyaw', 'su su', 'nu nu', 'yu yu', 'lu lu']
+        console.log(arr2.concat(arr1));
+        console.log(arr1.concat(arr3));
+
+
+        //Array Sorting
+        const arr4 = arr1.concat(arr2);
+        //Sort A to Z
+        console.log(arr4.sort());
+
+        //Sort Z to A
+        let arr4_1 = arr4.sort();
+        console.log(arr4_1.reverse());
+        
+        const arr5 = [700,200,100,50,150,10,5,7,6,600];
+        console.log(arr5);
+        // console.log(arr5.sort()); working but sort first number  eg.1,100,200,3,40,5
+
+        
+    </script>
+</body>
+</html>

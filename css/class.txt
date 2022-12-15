@@ -1,0 +1,37 @@
+wdf
+css animation
+l1
+l2
+l3
+bcj1
+bcj2
+bcj3
+js oop
+js oop project
+
+reactjs
+reactjs project 1
+reactjs project 2
+reactjs project 3
+
+vuejs
+
+be
+php
+laravel
+nodejs
+
+
+db
+mysql
+mysql project
+mongodb
+mongodb project
+
+
+server
+linux cmd
+aws
+
+
+python

@@ -1,0 +1,40 @@
+/*Single Selector*/
+h1{
+	color: green;
+}
+
+/*Group Selector*/
+h2,h3,h4{
+	color:  red;
+}
+
+/*ID Selector*/
+#myself,#mm{
+	color: blue;
+}
+
+#japu,span{
+	color: green;
+}
+
+/*Class Selector*/
+.ph{
+	color: darkred;
+}
+
+.phone{
+	font-size: 30px;
+}
+
+.hay{
+	color: brown;
+}
+
+#hay{
+	color: pink;
+	font-size: 20px;
+}
+
+div{
+	color: blue;
+}

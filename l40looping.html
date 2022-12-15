@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>looping</title>
+</head>
+<body>
+
+
+
+    <script type="text/javascript">
+
+        // object တခုချင်းစီကိုအများကြီးမထုတ်ချင်ဘူးဆိုရင်
+        // တခါထုတ်တိုင်းစာရိုက်မထုတ်ချင်ဘူးဆိုရင်
+
+        // let obj = {
+        // 		name : "aung aung"
+        // 		age: 30
+        // 	};
+        let obj = {
+                name : "aung aung",
+                age: 30
+            };
+
+        console.log(obj);
+        console.log(obj.name);
+        console.log(obj.age);
+
+        let arr = ["red","green","black"];
+        console.log(arr);
+        console.log(arr[0]);
+        console.log(arr[1]);
+        console.log(arr[2]);
+
+        //1. for loop
+
+        //start end ince/dec??
+        // second statement  ကို သိချင်ရင်first statement ကိုကြည့်
+        // third statement ကို သိချင်ရင်first/ sec statement ကိုကြည့်
+
+        // for (statement1,statement2,statement3){
+        // 	code to excuted
+        // }
+        // incre/decreasement ကို သိချင်ရင်first statement မှာ 0 sec statement မှာ i < 10 ဆိုရင် 0ကနေတဖြည်းတဖြည်းနဲ့ တက်လာတဲ့ပုံစံအဲတာမို့လို့
+        // increase ကိုရွေးမယ်
+
+        let i = 0;
+
+        for(i; i < 10; i++){
+            console.log(i)
+        }
+
+        console.log("this is i value from outside =" + i);
+
+
+        for(var j=5; j<10; j++){
+
+            console.log('j value is =' + j);
+        }
+
+        console.log("this is i value from outside =" + j);
+
+
+            // resultt = 0 then error
+            // const k=0;
+            // for (k; k>10; k++){
+            // 	console.log('k value is =' +k);
+            // }
+
+            for(var m=0; m<=10;m++){
+                //console.log(m);
+
+                if(m === 5){
+                    console.log("5 is my fav color");//သူကမှားတဲcondition တွေဆိုမပြဘူး တနည်းအားဖြင့် 5 နဲမညီရင်မထုတ်ပေးဘူး
+                }
+
+                console.log(m);//အဲဒီမှာ++ကconsole.log(m); printoutပြီးမှထုတ်မယ်
+            }
+
+            for(var n = 0; n < 10; n++){
+                console.log(n);
+
+                if(n === 2){
+                    console.log( n + "is my fav number");
+                    break;
+                }
+
+                // console.log(n);
+            }
+
+            console.log("this is n value from outside =" + n);
+
+            for(var q=0; q<10 ;q++){
+
+                if(q === 2){
+                    console.log(q + "is my fav number");
+                    continue;//သူကပြီးသွားတဲပုံစံ2ကိုထက်မထုတ်တော့ဘူးoperationကိုအစကနေပြန်စရမယ်
+                }
+
+                if(q === 5){
+                    console.log(q + "is my fav number");
+                    break;//သူကဖြတ်ထုတ်လိုက်တဲ့ပုံစံမပြီးသေးဘူးဆက်လုပ်မယ်
+                }
+
+
+                console.log(q);
+
+
+            }
+
+            console.log("this is q value from outside = " + q);
+
+            for(var s=10; s>= 0;s--){
+                console.log(s);
+            }
+            console.log("this is s value from outside =" + s);
+
+
+            
+
+            let myarrs=['red','green','black','orange','blue','grey'];
+            // console.log(myarrs);
+            //0 to 5
+            //6
+            //for(let w=0; w < 6; w++){
+
+            //console.log(w);
+            //console.log(myarray[w]);
+            //}
+
+
+            for(let w=0;w< myarrs.length;w++){
+            document.write(myarrs[w] +'<br/>');
+
+        }
+
+        // for loop with object
+        const peoples = [
+            {name:"aung aung",age:35},
+            {name:"su su",age:30},
+            {name:"hla hla",age:35}
+
+        ];
+
+        console.log(peoples);
+        // console.log(peoples[2].name);
+
+        for(let j=0; j < peoples.length; j++){
+            console.log(j);
+            console.log(typeof j);
+            document.write("Name =" + peoples[j].name + "\/ Age =" + peoples[j].age + "<br/>")
+        }
+
+
+    // 2.for in loop (for object / array)
+
+    // for in loop statement 1 ku pal shi for object တွေအတွက်ပိုအဆင်ပြေတယ် object ထဲမှာkey နဲ့ value ရှီတယ် for in loop ka arry ko inherit ထားတယ် ထူတ်ရင်[]နဲ့ထူတ်ရတယ် object လို့ . ထူတ်လို့မရဘူး
+
+    //for(key in mainobject){
+    // 	console.log(key);
+    // } ပထမတကြီမ်ပတ်ရင် 
+
+
+
+    let students = {
+        name:"Aung Aung",
+        city:"Mandalay",
+        parent:"U BA"
+    }
+
+    //console.log(students);
+    // console.log(students.name);
+
+    for(key in students){
+        // console.log(key);
+        // console.log(typeof key);
+
+        // console.log(students);
+        // console.log(students.name);
+
+        // console.log(students[key]);
+
+        document.write(key + " = " + students[key] + "<br/>");
+
+
+    }
+
+
+    // for in loop with arrray
+    const ourteams = ["kyaw kyaw","aung aung","maung maug","tun tun","taung taung"];
+
+    // console.log(ourteams);
+    // console.log(ourteams[4]);
+
+    for(idx in ourteams){
+        console.log(idx);
+        console.log(typeof idx);//string
+
+        console.log(ourteams);
+        document.write("for in loop result =" + ourteams[idx] + "<br/>");
+    }
+
+    // for in loop with string
+    let bd = "happy birthday to you";
+    console.log(bd);
+
+    for(key in bd){
+        console.log(key);
+        document.write(bd[key] + "<br/>");
+    }
+
+
+    // 3.for Of loop (arry တွေအတွက်ပိုအဆင်ပြေတယ်)
+
+    // for(value of array){
+    // 	code to executed
+    // }
+
+    document.write("<h3>for Of loop</h3>");
+
+    const members = ["su su","lu lu","nu nu","yu yu","mya mya"];
+    console.log(members);
+    console.log(members[3]);
+
+    for (member of members){
+        console.log(member);
+
+        document.write("for of loop result =" + member +"<br/>");
+    }
+
+
+    let greeting = "hello may";
+    console.log(greeting);
+
+    for(val of greeting){
+        console.log(val);
+        document.write(val + "<br/>");
+    }
+
+
+
+
+    // 4.While Loop
+    
+    // while(conditonal){
+    //     Before printout
+    //     code to executed
+    //     Aft4.While Loop
+    
+    // while(conditonal){
+    //     Before printout
+    //     code to executed
+    //     After printout
+    // }
+    // }
+
+    let b = 0;
+    while(b<10){
+        console.log("Number b value is = "+b);
+        b++;
+    }
+        
+    console.log("b outside value is = "+b);
+
+    var c = 0;
+    while(c <10){i
+
+        c++;
+        console.log("Number c value is = "+c);
+    }
+
+    console.log("c outside value is = "+c); 
+
+
+    let mycolors = ["red","green","black","grey","blue","pink","gold"];
+    console.log(mycolors);
+
+    let k = 0;
+    while(k < mycolors.length){
+        console.log(k);
+        document.write(mycolors[k]+"<br/>");
+        k++;
+    }
+
+
+    let laptops = [
+        {
+            cpu: "core i5",
+            ram: "8gb",
+            hdd: "1tb"
+        }
+    ];
+
+    console.log(laptops);
+    console.log(laptops[0].cpu);
+
+    let d = 0;
+    while(d<laptops.length){
+        // console.log(d);
+        document.write("cpu is = "+laptops[d].cpu+ "<br/>"+ "ram is = "+laptops[d].ram+"<br/>"+ "hdd is = "+laptops[d].hdd);
+        d++;
+    }
+
+
+    // 5.Do While Loop
+    // do{
+    //     before printout(in/de)
+    //     code to executed
+    //     after printout(in/de)
+    
+    // }while(condition);
+
+    let mm=0;
+    do{
+        console.log("MM result is"+mm);
+        mm++;
+    }while(mm < 10);
+
+    console.log("MM out side  value is"+mm);
+
+    
+    let nn=0;
+    do{
+        console.log("NN value is"+nn);
+        nn++;
+    }while(nn < 10);
+
+    console.log("NN out side  value is"+nn);
+
+
+    //6.For Each Loop
+    // mainarrays.forEach(function(value,index,array){
+    //     code to ve executed
+    // });
+
+    document.write("<h3>forEach Loop</h3>");
+
+    let candycolors = ["red","green","orange","violet","black","white","blue"];
+    console.log(candycolors);
+
+
+    candycolors.forEach(function(candycolor){
+        console.log(candycolor);
+    })
+
+    candycolors.forEach(function(candycolor,index){
+        document.write("Index Number is ="+idx+"Color is"+candycolor);
+    })
+
+    candycolors.forEach(function(candycolor,idx,arr){
+        console.log(arr);
+    })
+
+
+    // 7.Map
+    // mainArray.map(function(){
+    //     code to be executed
+    // })
+
+    document.write("<h3>Map Loop</h3>");
+    const visitors = ["ko sai","m zaw","june","aung aung","htet htet"];
+    console.log(visitors);
+
+    visitors.forEach(function(visitor){
+        console.log(`forEach result = Mr.${visitor}`);
+        console.log(visitor);
+    })
+
+    visitors.map(function(visitor){
+        console.log(`map result = Mr.${visitor}`);
+        console.log(visitor);
+    })
+    </script>
+</body>
+</html>

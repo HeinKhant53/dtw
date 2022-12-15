@@ -1,0 +1,104 @@
+.bdstyle1{
+	border-style: solid;
+}
+
+.bdstyle2{
+	border-style: double;
+}
+
+.bdstyle3{
+	border-style:  dotted;
+}
+
+.bdstyle4{
+	border-style: dashed;
+}
+
+.bdstyle5{
+	border-style: inset;
+}
+
+.bdstyle6{
+	border-style: outset;
+}
+
+
+.borderdesign{
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+	/*background: orange;*/
+
+	/*border-radius: 100%;
+	border-radius: 50%;*/
+
+	border-radius: 50px;
+
+	/*leftup rightup rightdown leftdown*/
+	/*border-radius: 50px 20px 50px 100px;*/
+
+			/*s    s     c*/
+	border : 3px dashed red;
+
+	border: 2px dotted #1d5cc2;
+
+	border:  2px double rgba(21, 229, 127, 1.0);
+}
+
+li{
+	list-style-type: circle;
+	list-style-type: square;
+	
+	list-style-type: none;
+	list-style: none;
+
+	list-style-type: decimal;
+	list-style-type: decimal-leading-zero ;
+
+	/*border: 1px solid orange;*/
+
+	border: 1px;
+	border-style: solid;
+	border-color: orange;
+
+	list-style-position: inside;
+	list-style-position: outside;
+}
+
+
+/*Attribute Selector*/
+input[type="text"]{
+	background-color: gray;
+	color: #ffff;
+	border-radius: 5px;
+}
+
+input[type="password"]{
+	background-color: white;
+	color: blue;
+	border-radius: 30px;
+}
+/*background image*/
+/*background-repeat*/
+/*background position*/
+/*background-attachment*/
+body{
+	background-image: url("../img/icon/icon1.png");
+	/*background-repeat: repeat;*/
+	background-repeat: no-repeat;
+
+	/*background-position: center;*/
+	/*background-position: left;*/
+	/*background-position: right;*/
+	/*background-position: top;*/
+	/*background-position: bottom;*/
+
+	/*background-position: right top;*/
+	/*background-position: left top;*/
+	/*background-position: right bottom;*/
+	background-position: left bottom;
+
+	/*background-attachment: scroll;*/
+	background-attachment: fixed;
+}
+

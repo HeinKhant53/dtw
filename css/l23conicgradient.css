@@ -1,0 +1,112 @@
+.containerone .circle1{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(red,pink);
+}
+.containerone .circle2{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		#fcba03,
+		#7ffc03,
+		#0349fc,
+		#fc0349
+	);
+}
+.containerone .circle3{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		rgba(218,61,127,1.00),
+		rgba(33,229,127,1.00),
+		rgba(20,19,127,1.00),
+		rgba(239,251,127,1.00)
+	);
+}
+.containerone .circle4{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		red 30%,
+		yellow 0% 60%,
+		blue 0% 	
+	);
+}
+.containertwo{
+	width:  600px;
+	height: 600px;
+	background-color: green;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+}
+.containertwo .c1{
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	border-radius: 50%;
+
+	position: absolute;
+
+	z-index: 1;
+}
+.containertwo .c2{
+	width: 320px;
+	height: 320px;
+	/*background-color: blue;*/
+	background: conic-gradient(
+		red,
+		violet 30%,
+		red 0%,
+		blue 70%,
+		red 0%,
+		yellow
+	);
+	border-radius: 50%;
+
+	position: absolute;
+	
+}
+
+.pointercontainer{
+	width: 20px;
+	height: 200px;
+	/*background-color: gray;*/
+
+	position: absolute;
+	top: 100px;
+	z-index: 2;
+
+	animation-name: myani;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	transform-origin: bottom;
+}
+@keyframes myani{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.pointer{
+	width: 20px;
+	height: 20px;
+	background-color: red;
+
+	display: block;
+	border-radius: 50%;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+}

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Function</title>
+	<style type="text/css">
+		*{
+			box-sizing:border-box;
+		}
+		body{
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			margin: 0;
+			overflow: hidden;
+		}
+
+		.box{
+			width:300px;
+			background-color: #f4f4f4;
+			padding: 10px;
+			box-shadow: 2px 2px 5px rgba(0,,0,0,3);
+
+		}
+		label{
+			display: block;
+			margin: 10px 0;
+		}
+
+		.form-control{
+			width: 100%;
+			display: block;
+			padding: 5px;
+		}
+
+		.btn{
+			width: 100%;
+			background:darkblue;
+			color: white;
+			font-size: 16px;
+			border: none;
+			padding: 5px;
+			margin-top: 10px;
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="box">
+		<h3>Show Name = <span id="replacename">Test</span></h3>
+
+		<!-- <form> -->
+			<label for="firstname">First Name</label>
+			<input type="text" name="firstname" id="firstname" class="form-control" autocomplete="off" autofocus="">
+
+			<label for="lastname">Last Name</label>
+			<input type="text" name="lastname" id="lastname" class="form-control" autocomplete="off" >
+
+			<button type="button" class="btn" onclick="getdata()">Get Name</button>
+		<!-- </form> -->
+	</div>
+
+	<script type="text/javascript">
+
+	// Function
+
+	// function name(){
+	// 	code to be executed;
+	// }
+
+	// name(); invoke/function recall
+
+	// 1.Regular Function
+	// (i)Manual function
+	// (ii)parameter function
+	// 	(a)single parameter function
+	// 	(b)multi parameter function
+
+
+
+	// 2.Arrow Function
+	// (i)Manual function
+	// (ii)parameter function
+	// 	(a)single parameter function
+	// 	(b)multi parameter function
+
+	// 1.Manual Function// no need to pay parameter
+
+
+	function greet(){
+
+		console.log("Hello Myanmar");
+		console.log("Hello ThaiLand");
+		console.log("Hello Indonesia");
+
+	}
+
+
+	greet();
+	greet();
+	greet();
+
+
+	var num1=50;
+	console.log(num1);
+
+	num1=100;
+	console.log(num1);
+
+
+	// Function Overwrite
+
+	function hello(){
+		console.log("Hello Yangon");
+	}
+
+	hello();//hello Mandalay
+
+
+	function hello(){
+		console.log("Hello Mandalay");
+	}
+
+	hello();//hello Mandalay
+
+
+
+	function funone(){
+		console.log("I am function one");
+	}
+
+	function funtwo(){
+
+		funone();
+		console.log("I am function two");
+		funthree();
+	}
+
+	function funthree(){
+		funone();
+		console.log("I am function three");
+	}
+
+	
+	funtwo();//one two one three
+
+	// -----------------------
+
+	// RETURN
+
+	function funfour(){
+
+		console.log(4);
+	}
+
+	function funfive(){
+
+		console.log(5);
+	}
+
+	function funsix(){
+		// funfour();
+		// funfive();
+
+		const num1=funfour();
+		const num2=funfive();
+
+		// console.log(num1);//result = undefined
+		// console.log(num2);//result = undefined 
+
+		// the result from console.log() will be only used in print out 
+
+		const total= num1+num2;
+		console.log(total);//NaN not a number
+	}
+
+	funsix();
+
+
+	// var num1=200;
+	// const num2=300;
+	// let total=num1+num2;
+	// console.log(total);
+
+
+		function funseven(){
+
+			// if(){
+
+			// 	return 6;
+
+			// }else if(){
+
+			// 	return 7;
+
+			// }else{
+
+			// 	return 8;
+
+			// }
+			return 7;
+		}
+
+
+		// funseven();
+
+		console.log(funseven());
+
+		function funeight(){
+			var num=8;
+			return num;
+		
+	
+		}
+
+		// funeight();
+		// console.log(funeight());
+
+		function funnine(){
+			const num1 = funseven();
+			const num2 = funeight();
+
+			// console.log(num1,num2);
+
+			var total =num1+num2;
+			console.log(total);
+
+		}
+
+		funnine();
+
+		function test(){
+
+			const num1=100;
+			const num2=200;
+
+			const total=num1+num2;
+
+			return "hee hee";
+		}
+
+		console.log(test());
+
+		// -------------
+
+		// (ii)parameter function
+	// 	(a)single parameter function
+
+	function myfun1(city){
+		// console.log("Hello "+city);
+		console.log(`Hello ${city}`);
+	}
+
+	// myfun1();//hello undefined
+
+	myfun1("Yangon");
+	myfun1("Mandalay");
+	myfun1(500);
+
+	//default parameter
+
+	function myfun2(country="Indonesia"){
+		console.log(`Hello ${country}`);
+	}
+
+	myfun2("ThaiLand");
+	myfun2("Myanmar");
+	myfun2();//hello Indonesia
+
+	// (b) multi parameter function
+
+	function multifun1(x,y,z){
+		console.log(`x value is ${x} , y value is ${y} , z value is ${z}`);
+	}
+
+	multifun1(10);//x =10
+	multifun1(10,20);//x = 10 and y=20
+	multifun1(10,20,30);//x=10 y=20 z=30
+	multifun1(10,20,30,40);//40 didnt work
+
+	function multifun2(x=1 ,y=2 ,z=3){
+		console.log(`x value is ${x} , y value is ${y} , z value is ${z}`);
+	}
+
+	// multifun2(100,200,300);
+	// multifun1(100,200);
+	// multifun1(100);
+	// multifun1();
+
+	function multifun3(x=1 ,y=2 ,z=3){
+		let result=x+y+z;
+		return result;
+
+		// return =x+y+z; //43
+		// return result=x+y+z;
+
+		// return let result=x+y+z;//error
+		// return var result=x+y+z;//error
+		// return const result=x+y+z;//error
+	}
+
+	// console.log(multifun3());//Nan
+
+	// console.log(multifun3(10,20));//Nan without default
+
+
+	console.log(multifun3(10,20,30));
+
+	console.log(multifun3(10,30));// 43 with default
+
+	// --------------------------------------
+
+	// 3. Constructor Function ( String Structure )
+
+	const confunone = new Function ("j","k","l","return j+k+l");
+	// const confunone = new Function (j,k,l,"return j+k+l");//error
+	// const confunone = new Function ("j","k","l");//error
+
+	console.log(confunone());//Nan
+
+	console.log(confunone(10,20,30));//60
+
+	console.log(confunone("10","20","30"));//102030
+
+	// --------------------
+
+
+	// 4. Nameless Function();
+
+let annfunone= 	function (name,color){
+
+		console.log(`My name is ${name}. I love ${color} color.`)
+
+	}
+
+	annfunone("aung aung","black");
+
+	// ------------------
+
+	// 5. Self Invoking Function
+
+	(function (){
+			console.log("Save Myanmar");
+		})();
+
+		// (function (){
+		// 	console.log("Save Myanmar");
+		// }()); It works too.. but shouldnt use
+
+
+		(function(name){
+					console.log(`My name is ${name}`);
+				}
+		)("tun tun");
+
+		// ----------------
+
+		function getdata(){
+			// console.log("I am working");
+
+			var getfirstname = document.getElementById('firstname').value;
+
+		var getlastname = document.getElementById('lastname').value;
+
+		// console.log(getfirstname,getlastname);
+
+		const getreplacename = document.getElementById("replacename");
+		//console.log(getreplacename);
+
+
+		// getreplacename.innerText = `${getfirstname} ${getlastname`;
+		// getreplacename.textContent = `${getfirstname} ${getlastname}`;
+		getreplacename.innerHTML = `${getfirstname} ${getlastname}`;
+
+		document.getElementById("firstname").value = "";
+		document.getElementById("lastname").value="";
+
+		document.getElementById("firstname").focus();
+
+
+
+		};
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
+
+

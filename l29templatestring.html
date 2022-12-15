@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Template String</title>
+
+    <ul>
+        <li>Name: Aung Aung</li>
+        <li>Age: 25</li>
+        <li>Job: Web Developer</li>
+        <li>City: Mandalay</li>
+    </ul>
+</head>
+<body>
+    <script type="text/javascript">
+        const name="Kyaw Kyaw";
+        const age=30;
+        const job="Web Developer";
+        const city="Yangon";
+
+        // let myliststyle; //Undefined
+        // var myliststyle; //Undefined
+        // const myliststyle; //error
+
+
+        // Withour Template String
+        // let myliststyle= '<ul><li>Name: '+name+'</li><li>Age: '+age+'</li><li>Job: '+job+'</li></ul>';
+
+        // let myliststyle= '<ul>'+
+        //     '<li>Name: '+name+'</li>'+
+        //     '<li>Age: '+age+'</li>'+
+        //     '<li>Job: '+job+'</li>'+
+        //     '</ul>';
+
+
+        // With Template String
+        let myliststyle=`
+        <ul>
+            <li>Name: ${name}</li>
+            <li>Age: ${age}</li>
+            <li>Job: ${job}</li>
+            <li>City: ${city}</li>
+
+        </ul>    
+        `
+        document.write(myliststyle)
+
+
+    </script>
+</body>
+</html>
